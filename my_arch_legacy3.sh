@@ -1,2 +1,2 @@
 #!/bin/bash
-wget git.io/archuefi3.sh && sh archuefi3.sh
+wget git.io/my_arch_legacy3.sh && sh my_arch_legacy3.sh
