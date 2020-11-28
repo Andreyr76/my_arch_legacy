@@ -1,5 +1,5 @@
 ##############################################
-# ArchLinux Fast Install
+# ArchLinux Fast Install BIOS
 ##############################################
 
 # Описание
@@ -14,25 +14,27 @@ Cостоит из 3 частей.
 2) Скачать и запустить скрипт командой:
 
    ```bash 
-   wget git.io/arch1.sh && sh arch1.sh
+   wget git.io/my_arch_legacy1.sh && sh my_arch_legacy1.sh
    ```
    или
    
-    ```bash
-   curl -OL git.io/arch1.sh && sh arch1.sh
+   ```bash
+   curl -OL git.io/my_arch_legacy1.sh && sh my_arch_legacy1.sh
    ```
    
    Запустится установка минимальной системы.
    2-я часть ставится автоматически и это базовая установка ArchLinux без программ. 
 3) 3-я часть не обязательная. Она устанавливает программы, AUR (yay), мои конфиги XFCE.
+
    Предварительно установите wget командой:
+   
    ```bash 
    sudo pacman -S wget
    ```
    Установка 3-й части производится из терминала командой:
    
    ```bash 
-   wget git.io/arch3.sh && sh arch3.sh
+   wget git.io/my_arch_legacy3.sh && sh my_arch_legacy3.sh
    ```
 
 # Настройка скрипта под себя
@@ -47,47 +49,3 @@ Cостоит из 3 частей.
 
 Если вам не подходит автоматическая разметка дисков, тогда вам, предварительно нужно сделать разметку дисков и настроить скрипт под свои нужды (программы, XFCE config и т.д.)
 Смотрите пометки в самом скрипте.
-
-# В разработке принимали участие:
-Алексей Бойко https://vk.com/ordanax
-
-Степан Скрябин https://vk.com/zurg3
-
-Михаил Сарвилин https://vk.com/michael170707
-
-Данил Антошкин https://vk.com/danil.antoshkin
-
-Юрий Порунцов https://vk.com/poruncov
-
-# Контакты
-Наша группа по Arch Linux https://vk.com/arch4u
-
-
-# История изменений
-
-### 22.09.2019 ArchLinux Fast Install v1.6
-- Удален SDDM
-
-### 8.04.2019 ArchLinux Fast Install v1.5
-- Добавлен выбор DE OpenBox
-
-### 28.03.2019 ArchLinux Fast Install v1.4
-- Добавлена устатановка conky
-
-### 27.03.2019 ArchLinux Fast Install v1.3
-- Добавлен выбор DE - Xfce и KDE
-- Добавлен выбор DM - SDDM и LXDM
-- Добавлен выбор загрузки системы без паузы в Grub
-
-### 23.03.2019 ArchLinux Fast Install v1.2
-- Добавлен выбор установки рекомендуемых программ
-
-### 21.03.2019 ArchLinux Fast Install v1.1
-- Исправлен баг с установкой тем
-- Заменена тема курсора
-- Скорректирован конфигурационный файл XFCE
-
-### 18.03.2019 ArchLinux Fast Install v1.0
-- Теперь можно вводить собственное имя хоста и юзера
-- Исправлен 3-й файл с установкой тем
-- aurman заменен на yay
