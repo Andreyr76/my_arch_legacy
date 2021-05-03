@@ -54,6 +54,12 @@ pacman -Syy
 echo 'Ставим иксы и драйвера'
 pacman -S xorg-server xorg-drivers xorg-xinit
 
+echo "Ставим i3"
+pacman -S i3-wm  i3status dmenu sakura xfce4-terminal ttf-font-awesome feh gvfs udiskie xorg-xbacklight tumbler picom jq --noconfirm
+
+echo '.xinitrc'
+echo 'exec i3' >> /home/andrey/.xinitrc
+
 #echo "Ставим XFCE"
 #pacman -S xfce4 xfce4-goodies --noconfirm
 
