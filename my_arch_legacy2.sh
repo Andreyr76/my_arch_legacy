@@ -54,12 +54,12 @@ pacman -Syy
 echo 'Ставим иксы и драйвера'
 pacman -S xorg-server xorg-drivers xorg-xinit
 
-echo "Ставим XFCE"
-pacman -S xfce4 xfce4-goodies --noconfirm
+#echo "Ставим XFCE"
+#pacman -S xfce4 xfce4-goodies --noconfirm
 
-echo 'Cтавим DM'
-pacman -S lxdm --noconfirm
-systemctl enable lxdm
+#echo 'Cтавим DM'
+#pacman -S lxdm --noconfirm
+#systemctl enable lxdm
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm 
